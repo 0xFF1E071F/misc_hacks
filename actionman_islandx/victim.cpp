@@ -6,6 +6,13 @@
 #include <Shlwapi.h>
 #pragma comment(lib, "Shlwapi")
 
+/* 
+Action Man: Raid on Island X
+--------------------------------------------------------
+SHA-1 of image: EC0D22B6AE8793800ACA21DD5AC0273ACB4E5511
+Set executable in Windows 98/Me compatibility mode always before
+and when you run the game*/
+
 
 uAddr uBase;
 
@@ -32,6 +39,7 @@ typedef BOOL(WINAPI* GetVolumeInformation2)(
 	DWORD   nFileSystemNameSize
 	);
 
+char maxpath[MAX_PATH] = { 0 };
 
 BOOL WINAPI volumeinfo(
 	LPCSTR  lpRootPathName,
@@ -45,22 +53,15 @@ BOOL WINAPI volumeinfo(
 {
 	lstrcpyA(lpVolumeNameBuffer, "ISLANDX");
 	nVolumeNameSize = strlen("ISLANDX");
-	char maxpath[MAX_PATH] = { 0 };
-	GetCurrentDirectoryA(MAX_PATH, maxpath);
-	char* root = maxpath;
-	lpRootPathName = root;
+	lpRootPathName = maxpath;
 	return TRUE;
 }
 
 DWORD WINAPI logicalstr(DWORD nBufferLength, LPSTR lpBuffer)
 {
-	char buff[4] = {};   // temp buffer for root 
-	char maxpath[MAX_PATH] = { 0 };
-	GetCurrentDirectoryA(MAX_PATH, maxpath);
-	int drvnumber = PathGetDriveNumberA(maxpath);
-	PathBuildRootA(buff, drvnumber);
 	strcpy(lpBuffer, maxpath);
-	return lstrlenA(maxpath);
+	nBufferLength = lstrlenA(maxpath);
+	return nBufferLength;
 }
 
 void StartPatch(HMODULE base)
@@ -68,7 +69,7 @@ void StartPatch(HMODULE base)
 	uBase = uAddr(base);
 	PIMAGE_DOS_HEADER pDsHeader = PIMAGE_DOS_HEADER(uBase);
 	PIMAGE_NT_HEADERS pPeHeader = PIMAGE_NT_HEADERS(uAddr(uBase) + pDsHeader->e_lfanew);
-	auto hExecutableInstance = (size_t)GetModuleHandle(NULL);
+	HMODULE hExecutableInstance = (HMODULE)GetModuleHandle(NULL);
 	IMAGE_NT_HEADERS* ntHeader = (IMAGE_NT_HEADERS*)(hExecutableInstance + ((IMAGE_DOS_HEADER*)hExecutableInstance)->e_lfanew);
 	SIZE_T size = ntHeader->OptionalHeader.SizeOfImage;
 	DWORD oldProtect;
@@ -77,6 +78,7 @@ void StartPatch(HMODULE base)
 	dprintf("Let's patch!\n");
 	uBase = uAddr(base);
 
+	GetCurrentDirectoryA(MAX_PATH, maxpath);
 	MH_Initialize();
 	MH_CreateHookApiEx(L"kernel32.dll", "GetLogicalDriveStringsA", &logicalstr, NULL, NULL);
 	MH_CreateHookApiEx(L"kernel32.dll", "GetDriveTypeA", &drivetype, NULL, NULL);
