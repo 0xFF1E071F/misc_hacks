@@ -45,6 +45,7 @@ typedef u64 ulong;
 static HINSTANCE hInstance;
 static HMODULE hDll;
 
+bool IsBadReadPtr(void* p);
 uAddr ReadRelativeAddress(uAddr address);
 void WriteRelativeAddress(uAddr address, uAddr content);
 void WriteMemBytes(LPVOID lpAddress, LPVOID lpBuffer, DWORD nSize);
