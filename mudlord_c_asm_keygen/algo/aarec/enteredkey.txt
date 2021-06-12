@@ -1,0 +1,52 @@
+12345-6789A-BCDEF-12345 = base key for tests
+  111   111   111   111 = check mask, rest are random
+
+* Serial values in the last 3 components of serial chunk
+  MUST match the ones computed. If one fails, the program
+  will not register. Otherwise, the IsRegistered byte is 
+  flipped to 1.
+* First component of serial chunk are copied to buffer n.1
+  at location 004F3310
+  -Example: 01060B01 
+* Second component of serial chunk are copied to buffer n.2
+  at location 004F331C
+  -Example: 02070C02
+* The first and second components of each serial portion correlate
+  to the X and Y coords of a bitmap/array, respectively.
+* Each bitmap/array corresponds to a serial portion. Bitmap 5 ain't used.
+* Each colour component of each bitmap/array is in order of R.G.B. This is
+  used when making and formatting the serial.
+
+SOOOOOOO...to make a keygen.
+
+
+Do initial PRNG seed.
+
+Then
+1) Randomize X and Y.
+2) Read the pixel values at the location specified at X and Y
+3) Then
+- X coord is first value encoded in base 36
+- Y coord is second value encoded in base 36
+- Red component is third value encoded in base 36
+- Green component is fourth value encoded in base 36
+- Blue component is last value encoded in base 36
+4) Rinse and repeat for parts two to four.
+
+Bottom line: BMP files are used as lookup tables!
+
+
+original serials
+4F3328 - part1
+4F332C - part2
+4F3330 - part3
+4F3334 - part4
+calculated serials
+4F333C - part 1
+4F3340 - part 2
+4F3344 - part 3
+4F3348 - part 4
+CALL 004BDA1C = original serial is acquired and split into needed chunks.
+004BD526 // serial
+004BD4F8 //formatting function of chunks from EAX?
+004BDF94 //start of serial check and validation

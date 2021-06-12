@@ -1,0 +1,191 @@
+ keygen
+
+ Timestamp is 4a5150d7 (Mon Jul 06 11:18:15 2009)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000028f8H .text                   CODE
+ 0002:00000000 00000120H .idata$5                DATA
+ 0002:00000120 00000000H .rdata                  DATA
+ 0002:00000120 00000064H .idata$2                DATA
+ 0002:00000184 00000014H .idata$3                DATA
+ 0002:00000198 00000120H .idata$4                DATA
+ 0002:000002b8 0000045cH .idata$6                DATA
+ 0002:00000714 00000000H .edata                  DATA
+ 0003:00000000 0002d2c4H .data                   DATA
+ 0003:0002d2d0 0001237eH .bss                    DATA
+ 0004:00000000 000001d8H .rsrc$01                DATA
+ 0004:000001e0 000067c8H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       _MakeOwnerDraw@8           00401000 f   keygen.obj
+ 0001:00000023       _DrawButtonColor@20        00401023 f   keygen.obj
+ 0001:000000f0       _start                     004010f0 f   keygen.obj
+ 0001:00000120       _DlgProc@16                00401120 f   keygen.obj
+ 0001:0000037c       _AboutProc@16              0040137c f   about.obj
+ 0001:0000044c       __rand@0                   0040144c f   about.obj
+ 0001:0000046c       _InitScroller@0            0040146c f   about.obj
+ 0001:0000056c       _FirstSetup@0              0040156c f   about.obj
+ 0001:000005e0       _DrawStars@0               004015e0 f   about.obj
+ 0001:00000734       _SetupScroll@0             00401734 f   about.obj
+ 0001:0000079c       _ScrollMain@0              0040179c f   about.obj
+ 0001:00000924       _UpdateScroll@0            00401924 f   about.obj
+ 0001:000009b0       _KeygenProc@8              004019b0 f   algo.obj
+ 0001:00000a20       _CreateScroller@4          00401a20 f   TextScroller:TextScroller.obj
+ 0001:00000a47       _PauseScroller@4           00401a47 f   TextScroller:TextScroller.obj
+ 0001:00000a61       _ScrollThread@4            00401a61 f   TextScroller:TextScroller.obj
+ 0001:00000c60       _BlendBitmap@16            00401c60 f   TextScroller:TextScroller.obj
+ 0001:00000d00       _GetDIBPixel@20            00401d00 f   TextScroller:TextScroller.obj
+ 0001:00000d30       _SetDIBPixel@24            00401d30 f   TextScroller:TextScroller.obj
+ 0001:00000d70       _BlendPixel@12             00401d70 f   TextScroller:TextScroller.obj
+ 0001:00000de0       _PercentValue@8            00401de0 f   TextScroller:TextScroller.obj
+ 0001:00000e00       _PercentColor@8            00401e00 f   TextScroller:TextScroller.obj
+ 0001:00000e53       _scrollmain                00401e53 f   TextScroller:TextScroller.obj
+ 0001:00000e84       _uFMOD_Jump2Pattern@4      00401e84     ufmod:ufmod.obj
+ 0001:00000ed5       _uFMOD_SetVolume@4         00401ed5     ufmod:ufmod.obj
+ 0001:00000eee       _uFMOD_Pause@0             00401eee     ufmod:ufmod.obj
+ 0001:00000ef2       _uFMOD_Resume@0            00401ef2     ufmod:ufmod.obj
+ 0001:00000efa       _uFMOD_GetStats@0          00401efa     ufmod:ufmod.obj
+ 0001:00000efe       _uFMOD_GetRowOrder@0       00401efe     ufmod:ufmod.obj
+ 0001:00000f0e       _uFMOD_GetTime@0           00401f0e     ufmod:ufmod.obj
+ 0001:00000f54       _uFMOD_GetTitle@0          00401f54     ufmod:ufmod.obj
+ 0001:00001068       _uFMOD_PlaySong@12         00402068     ufmod:ufmod.obj
+ 0001:00002760       _DialogBoxParamA@20        00403760 f   user32:user32.dll
+ 0001:00002766       _DrawTextA@20              00403766 f   user32:user32.dll
+ 0001:0000276c       _EndDialog@8               0040376c f   user32:user32.dll
+ 0001:00002772       _GetDlgItem@8              00403772 f   user32:user32.dll
+ 0001:00002778       _GetDlgItemTextA@16        00403778 f   user32:user32.dll
+ 0001:0000277e       _GetWindowDC@4             0040377e f   user32:user32.dll
+ 0001:00002784       _LoadIconA@8               00403784 f   user32:user32.dll
+ 0001:0000278a       _OffsetRect@12             0040378a f   user32:user32.dll
+ 0001:00002790       _SendMessageA@16           00403790 f   user32:user32.dll
+ 0001:00002796       _SetDlgItemTextA@12        00403796 f   user32:user32.dll
+ 0001:0000279c       _BeginPaint@8              0040379c f   user32:user32.dll
+ 0001:000027a2       _EndPaint@8                004037a2 f   user32:user32.dll
+ 0001:000027a8       _GetDC@4                   004037a8 f   user32:user32.dll
+ 0001:000027ae       _GetWindowRect@8           004037ae f   user32:user32.dll
+ 0001:000027b4       _KillTimer@8               004037b4 f   user32:user32.dll
+ 0001:000027ba       _SetTimer@16               004037ba f   user32:user32.dll
+ 0001:000027c0       _wsprintfA                 004037c0 f   user32:user32.dll
+ 0001:000027d0       _nrandom@4                 004037d0 f   masm32:nrand.obj
+ 0001:00002816       _nseed@4                   00403816 f   masm32:nrand.obj
+ 0001:00002826       _ExitProcess@4             00403826 f   kernel32:kernel32.dll
+ 0001:0000282c       _FindResourceA@12          0040382c f   kernel32:kernel32.dll
+ 0001:00002832       _GetModuleHandleA@4        00403832 f   kernel32:kernel32.dll
+ 0001:00002838       _GetTickCount@0            00403838 f   kernel32:kernel32.dll
+ 0001:0000283e       _LoadResource@8            0040383e f   kernel32:kernel32.dll
+ 0001:00002844       _LockResource@4            00403844 f   kernel32:kernel32.dll
+ 0001:0000284a       _SizeofResource@8          0040384a f   kernel32:kernel32.dll
+ 0001:00002850       _MulDiv@12                 00403850 f   kernel32:kernel32.dll
+ 0001:00002856       _RtlZeroMemory@8           00403856 f   kernel32:kernel32.dll
+ 0001:0000285c       _lstrcpyA@8                0040385c f   kernel32:kernel32.dll
+ 0001:00002862       _lstrlenA@4                00403862 f   kernel32:kernel32.dll
+ 0001:00002868       _CloseHandle@4             00403868 f   kernel32:kernel32.dll
+ 0001:0000286e       _CreateThread@24           0040386e f   kernel32:kernel32.dll
+ 0001:00002874       _GetProcAddress@8          00403874 f   kernel32:kernel32.dll
+ 0001:0000287a       _Sleep@4                   0040387a f   kernel32:kernel32.dll
+ 0001:00002880       _InitCommonControls@0      00403880 f   comctl32:comctl32.dll
+ 0001:00002886       _AddFontMemResourceEx@16   00403886 f   gdi32:gdi32.dll
+ 0001:0000288c       _CreateFontIndirectA@4     0040388c f   gdi32:gdi32.dll
+ 0001:00002892       _CreatePen@12              00403892 f   gdi32:gdi32.dll
+ 0001:00002898       _CreateSolidBrush@4        00403898 f   gdi32:gdi32.dll
+ 0001:0000289e       _RoundRect@28              0040389e f   gdi32:gdi32.dll
+ 0001:000028a4       _SelectObject@8            004038a4 f   gdi32:gdi32.dll
+ 0001:000028aa       _SetBkMode@8               004038aa f   gdi32:gdi32.dll
+ 0001:000028b0       _SetTextColor@8            004038b0 f   gdi32:gdi32.dll
+ 0001:000028b6       _BitBlt@36                 004038b6 f   gdi32:gdi32.dll
+ 0001:000028bc       _CreateCompatibleBitmap@12 004038bc f   gdi32:gdi32.dll
+ 0001:000028c2       _CreateCompatibleDC@4      004038c2 f   gdi32:gdi32.dll
+ 0001:000028c8       _CreateFontA@56            004038c8 f   gdi32:gdi32.dll
+ 0001:000028ce       _DeleteObject@4            004038ce f   gdi32:gdi32.dll
+ 0001:000028d4       _GetDeviceCaps@8           004038d4 f   gdi32:gdi32.dll
+ 0001:000028da       _SetBkColor@8              004038da f   gdi32:gdi32.dll
+ 0001:000028e0       _SetPixelV@16              004038e0 f   gdi32:gdi32.dll
+ 0001:000028e6       _CreateDIBSection@24       004038e6 f   gdi32:gdi32.dll
+ 0001:000028ec       _GetTextExtentPointA@16    004038ec f   gdi32:gdi32.dll
+ 0001:000028f2       _TextOutA@20               004038f2 f   gdi32:gdi32.dll
+ 0002:00000000       __imp__InitCommonControls@0 00404000     comctl32:comctl32.dll
+ 0002:00000004       \177comctl32_NULL_THUNK_DATA 00404004     comctl32:comctl32.dll
+ 0002:00000008       __imp__GetTextExtentPointA@16 00404008     gdi32:gdi32.dll
+ 0002:0000000c       __imp__CreateDIBSection@24 0040400c     gdi32:gdi32.dll
+ 0002:00000010       __imp__SetPixelV@16        00404010     gdi32:gdi32.dll
+ 0002:00000014       __imp__SetBkColor@8        00404014     gdi32:gdi32.dll
+ 0002:00000018       __imp__GetDeviceCaps@8     00404018     gdi32:gdi32.dll
+ 0002:0000001c       __imp__DeleteObject@4      0040401c     gdi32:gdi32.dll
+ 0002:00000020       __imp__CreateFontA@56      00404020     gdi32:gdi32.dll
+ 0002:00000024       __imp__CreateCompatibleDC@4 00404024     gdi32:gdi32.dll
+ 0002:00000028       __imp__TextOutA@20         00404028     gdi32:gdi32.dll
+ 0002:0000002c       __imp__BitBlt@36           0040402c     gdi32:gdi32.dll
+ 0002:00000030       __imp__SetTextColor@8      00404030     gdi32:gdi32.dll
+ 0002:00000034       __imp__SetBkMode@8         00404034     gdi32:gdi32.dll
+ 0002:00000038       __imp__SelectObject@8      00404038     gdi32:gdi32.dll
+ 0002:0000003c       __imp__RoundRect@28        0040403c     gdi32:gdi32.dll
+ 0002:00000040       __imp__CreateSolidBrush@4  00404040     gdi32:gdi32.dll
+ 0002:00000044       __imp__CreatePen@12        00404044     gdi32:gdi32.dll
+ 0002:00000048       __imp__CreateFontIndirectA@4 00404048     gdi32:gdi32.dll
+ 0002:0000004c       __imp__AddFontMemResourceEx@16 0040404c     gdi32:gdi32.dll
+ 0002:00000050       __imp__CreateCompatibleBitmap@12 00404050     gdi32:gdi32.dll
+ 0002:00000054       \177gdi32_NULL_THUNK_DATA  00404054     gdi32:gdi32.dll
+ 0002:00000058       __imp__SetFilePointer@16   00404058     kernel32:kernel32.dll
+ 0002:0000005c       __imp__ReadFile@20         0040405c     kernel32:kernel32.dll
+ 0002:00000060       __imp__CreateFileA@28      00404060     kernel32:kernel32.dll
+ 0002:00000064       __imp__ExitProcess@4       00404064     kernel32:kernel32.dll
+ 0002:00000068       __imp__FindResourceA@12    00404068     kernel32:kernel32.dll
+ 0002:0000006c       __imp__GetModuleHandleA@4  0040406c     kernel32:kernel32.dll
+ 0002:00000070       __imp__GetTickCount@0      00404070     kernel32:kernel32.dll
+ 0002:00000074       __imp__LoadResource@8      00404074     kernel32:kernel32.dll
+ 0002:00000078       __imp__LockResource@4      00404078     kernel32:kernel32.dll
+ 0002:0000007c       __imp__SizeofResource@8    0040407c     kernel32:kernel32.dll
+ 0002:00000080       __imp__MulDiv@12           00404080     kernel32:kernel32.dll
+ 0002:00000084       __imp__RtlZeroMemory@8     00404084     kernel32:kernel32.dll
+ 0002:00000088       __imp__lstrcpyA@8          00404088     kernel32:kernel32.dll
+ 0002:0000008c       __imp__lstrlenA@4          0040408c     kernel32:kernel32.dll
+ 0002:00000090       __imp__CloseHandle@4       00404090     kernel32:kernel32.dll
+ 0002:00000094       __imp__CreateThread@24     00404094     kernel32:kernel32.dll
+ 0002:00000098       __imp__GetProcAddress@8    00404098     kernel32:kernel32.dll
+ 0002:0000009c       __imp__Sleep@4             0040409c     kernel32:kernel32.dll
+ 0002:000000a0       __imp__WaitForSingleObject@8 004040a0     kernel32:kernel32.dll
+ 0002:000000a4       __imp__SetThreadPriority@8 004040a4     kernel32:kernel32.dll
+ 0002:000000a8       __imp__HeapAlloc@12        004040a8     kernel32:kernel32.dll
+ 0002:000000ac       __imp__HeapCreate@12       004040ac     kernel32:kernel32.dll
+ 0002:000000b0       __imp__HeapDestroy@4       004040b0     kernel32:kernel32.dll
+ 0002:000000b4       \177kernel32_NULL_THUNK_DATA 004040b4     kernel32:kernel32.dll
+ 0002:000000b8       __imp__wsprintfA           004040b8     user32:user32.dll
+ 0002:000000bc       __imp__SetTimer@16         004040bc     user32:user32.dll
+ 0002:000000c0       __imp__KillTimer@8         004040c0     user32:user32.dll
+ 0002:000000c4       __imp__GetWindowRect@8     004040c4     user32:user32.dll
+ 0002:000000c8       __imp__GetDC@4             004040c8     user32:user32.dll
+ 0002:000000cc       __imp__EndPaint@8          004040cc     user32:user32.dll
+ 0002:000000d0       __imp__BeginPaint@8        004040d0     user32:user32.dll
+ 0002:000000d4       __imp__SetDlgItemTextA@12  004040d4     user32:user32.dll
+ 0002:000000d8       __imp__SendMessageA@16     004040d8     user32:user32.dll
+ 0002:000000dc       __imp__OffsetRect@12       004040dc     user32:user32.dll
+ 0002:000000e0       __imp__LoadIconA@8         004040e0     user32:user32.dll
+ 0002:000000e4       __imp__GetWindowDC@4       004040e4     user32:user32.dll
+ 0002:000000e8       __imp__GetDlgItemTextA@16  004040e8     user32:user32.dll
+ 0002:000000ec       __imp__GetDlgItem@8        004040ec     user32:user32.dll
+ 0002:000000f0       __imp__EndDialog@8         004040f0     user32:user32.dll
+ 0002:000000f4       __imp__DrawTextA@20        004040f4     user32:user32.dll
+ 0002:000000f8       __imp__DialogBoxParamA@20  004040f8     user32:user32.dll
+ 0002:000000fc       \177user32_NULL_THUNK_DATA 004040fc     user32:user32.dll
+ 0002:00000100       __imp__waveOutWrite@12     00404100     winmm:winmm.dll
+ 0002:00000104       __imp__waveOutUnprepareHeader@12 00404104     winmm:winmm.dll
+ 0002:00000108       __imp__waveOutReset@4      00404108     winmm:winmm.dll
+ 0002:0000010c       __imp__waveOutPrepareHeader@12 0040410c     winmm:winmm.dll
+ 0002:00000110       __imp__waveOutOpen@24      00404110     winmm:winmm.dll
+ 0002:00000114       __imp__waveOutGetPosition@12 00404114     winmm:winmm.dll
+ 0002:00000118       __imp__waveOutClose@4      00404118     winmm:winmm.dll
+ 0002:0000011c       \177winmm_NULL_THUNK_DATA  0040411c     winmm:winmm.dll
+ 0002:00000120       __IMPORT_DESCRIPTOR_winmm  00404120     winmm:winmm.dll
+ 0002:00000134       __IMPORT_DESCRIPTOR_user32 00404134     user32:user32.dll
+ 0002:00000148       __IMPORT_DESCRIPTOR_kernel32 00404148     kernel32:kernel32.dll
+ 0002:0000015c       __IMPORT_DESCRIPTOR_comctl32 0040415c     comctl32:comctl32.dll
+ 0002:00000170       __IMPORT_DESCRIPTOR_gdi32  00404170     gdi32:gdi32.dll
+ 0002:00000184       __NULL_IMPORT_DESCRIPTOR   00404184     winmm:winmm.dll
+
+ entry point at        0001:00000e53
+
+ Static symbols
+

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dll.cpp" />
+    <ClCompile Include="sound_out_waveout.cpp" />
+    <ClCompile Include="sound_out_dsound.cpp" />
+    <ClCompile Include="dsound\dsound.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dll.h" />
+    <ClInclude Include="sound_out.h" />
+    <ClInclude Include="dsound\ds_stream.h" />
+  </ItemGroup>
+</Project>
